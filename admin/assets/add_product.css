@@ -1,0 +1,284 @@
+:root{
+    --bgcolor:#ffffff;
+    --textcolor:#111111;
+    --maincolor:#c8815f;
+    --bgcolor-1: rgb(40, 161, 64);
+    --bgcolor-2:#22282a;
+    --padding: 8%;
+    --item:rgb(235,219,203);
+    --bgcolor-9:rgb(46, 214, 113);
+    --bgcolor-99:rgba(46, 214, 113, 0.744);
+    --bgcolor-10:#05664f;
+    --bgcolor-11:#0d2329;
+    --bgcolor-12:#14edb9;
+    --bgcolor-13:#5aff7a;
+    --bgcolor-13:#d1ff5d;
+    --bgcolor-14:#14323afc;
+}
+
+
+.header{
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 50px;
+    background-color: white;
+    margin-top: 50px;
+    
+   
+
+}
+
+.header .title{
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 30px;
+    position: relative;
+    bottom: 15px;
+    padding: 20px;
+    background:linear-gradient(to left ,var(--bgcolor-99),var(--bgcolor-9)); 
+    border-radius: 8px;
+    color: white;
+}
+
+
+
+label{
+    font-size: 15px;
+    color: rgb(0, 0, 0);
+    
+}
+
+.f1 select{
+    width: 100%;
+    height: 35px;
+    border: solid 2px rgb(0, 0, 0);
+    border-radius: 5px;
+    margin-bottom:10px ;
+    margin-top:5px ;
+    cursor:pointer;
+    padding-left: 10px;
+}
+
+option{
+    cursor: pointer;
+    padding-left: 10px;
+}
+
+input{
+    margin-bottom:10px ;
+    margin-top:5px ;
+    height: 35px;
+    border: solid 2px rgb(0, 0, 0);
+    border-radius: 5px;
+    margin-bottom:10px ;
+    margin-top:5px ;
+    cursor:pointer;
+    padding-left: 10px;
+    
+}
+
+
+
+textarea{
+    margin-bottom:10px ;
+    margin-top:5px ;
+    height: 70px;
+    border: solid 2px rgb(0, 0, 0);
+    border-radius: 5px;
+    margin-bottom:10px ;
+    margin-top:5px ;
+    cursor:pointer;
+    padding-left: 10px;
+}
+
+
+/*-----------nom et slug-----------*/
+.f23{
+    display: flex;
+    justify-content:space-around;
+
+}
+
+
+.f2{
+    width: 50%;
+}
+
+.f2 input{
+    width: 90%;
+}
+
+
+.f3{
+    width: 50%;
+}
+
+.f3 input{
+    width: 99%;
+}
+
+/*----------------------*/
+
+.f4 textarea{
+    width: 99.5%;
+}
+
+.f4 textarea{
+    width: 99.5%;
+}
+
+/*-----------price-----------*/
+.f56{
+    display: flex;
+    justify-content:space-around;
+}
+
+.f5{
+    width: 50%;
+}
+
+.f5 input{
+    width: 90%;
+}
+
+
+.f6{
+    width: 50%;
+}
+
+.f6 input{
+    width: 99%;
+}
+
+/*----------------------------*/
+
+/*-------------quantity + status + popular---------------*/
+.f7910{
+    display: flex;
+    justify-content:space-around;
+    width: 100%;
+    
+}
+
+.f7{
+    width: 50%;
+    color: white;
+}
+
+.f7 input{
+    width: 90%;
+}
+
+.f910{
+    width: 50%;
+    display: flex;
+    justify-content: space-around;
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+}
+
+.f8 {
+    width: 50%;
+}
+
+.f8 input{
+    width: 90%;
+}
+
+.f10 input[type="checkbox"] {
+    width: 20px;
+}
+
+.f9 input[type="checkbox"] {
+    width: 20px;
+}
+
+
+.f7 input[type="file"] {
+    border: 3px solid #000000;
+    padding: 5px;
+    background-color:var(--bgcolor-11);
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+
+}
+
+.f7 input[type="file"]:hover {
+    background-color: var(--bgcolor-9);
+    transition: 0.3s;
+    
+}
+
+
+.f10 input{
+    width: 99.5%;
+}
+
+/*------------------------------------------------------------------*/
+
+.f11 textarea{
+    width: 99.5%;
+}
+
+.f12 textarea{
+    width: 99.5%;
+}
+
+.upload{
+    display: flex;
+    justify-content: space-around;
+
+}
+
+.validation{
+    display: flex;
+    justify-content: center;
+
+}
+
+.validation button{
+    font-size: 18px;
+    font-weight: 700;
+    padding: 10px;
+    width: 150px;
+    background-color: var(--bgcolor-9);
+    cursor: pointer;
+    color: white;
+}
+
+.validation button:hover{
+    transform: scale(1.0,1) translateY(-5px);
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+    transition: 0.4s;
+    
+    color: white;
+    background: #22282a;
+}
+
+@media (max-width:450px){
+    .header{
+        height: 200vh;
+    }
+
+    .f7 input[type="file"] {
+        width: 50px;
+        
+    }
+
+    .validation button{
+        font-size: 18px;
+        font-weight: 700;
+        padding: 5px;
+        width: 150px;
+        background-color: var(--bgcolor-9);
+        cursor: pointer;
+        color: white;
+    }
+
+    .header .title{
+        font-size: 15px;
+        padding: 10px;
+        
+    }
+    
+}

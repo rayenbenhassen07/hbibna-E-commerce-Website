@@ -1,0 +1,720 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box; 
+} 
+
+
+
+
+:root{
+    --bgcolor:#ffffff;
+    --textcolor:#111111;
+    --maincolor:#c8815f;
+    --bgcolor-1: rgb(40, 161, 64);
+    --bgcolor-2:#22282a;
+    --padding: 8%;
+    --item:rgb(235,219,203);
+    --bgcolor-9:rgb(46, 214, 113);
+    --bgcolor-10:#05664f;
+    --bgcolor-11:#0d2329;
+    --bgcolor-12:#14edb9;
+    --bgcolor-13:#5aff7a;
+    --bgcolor-13:#d1ff5d;
+    --bgcolor-14:#14323afc;
+}
+
+
+body{
+    width: 100%;  
+}
+
+.formul{
+    height: 100vh;
+    width: 100%;
+    background:linear-gradient(to bottom, rgba(34, 34, 34, 0.308), rgb(255, 255, 255));
+   
+}
+
+
+
+
+
+.cart{
+    position: absolute;
+    top: 15%;
+    right: 10%;
+    width: 360px;
+    min-height: 80vh;
+    padding: 20px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+    z-index: 10;  
+}
+
+
+.form{
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 30px;
+    width: 60%;
+    height: 100vh;
+    padding-top: 8%;
+    
+}
+
+.form h3{
+    font-size: 30px;
+    
+}
+
+.form input,textarea{
+    border: 0;
+    margin: 10px 0;
+    padding: 20px;
+    outline: none;
+    background-color: rgb(255, 255, 255);
+    font-size: 16px;
+    width: 500px;
+   
+
+}
+
+.inputpro{
+    display: none;
+}
+
+.prixx{
+    display: none;
+}
+
+.submit{
+    color:var(--bgcolor-11);
+    background-color: var(--bgcolor-13);
+    display: flex;
+    margin-top: 5vh;
+    padding: 12px 40px;
+    border: none;
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;   
+    border-radius: 5px;
+    font-weight: 800;
+    border: solid 2px;
+}
+
+.submit:hover{
+    transform: scale(1.0,1) translateY(-5px);
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+    transition: 0.4s;
+    color: white;
+    background: #22282a;
+}
+
+
+
+/*----------------------------------cart----------------------------------------------------------*/
+.cart{
+    width: 360px;
+    height: 80vh;
+    min-height: 80vh;
+    padding: 10px;
+    overflow-y: scroll;
+    
+}
+
+.cart::-webkit-scrollbar{
+    display: none;
+}
+
+
+
+.cart-box{
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: 32% 50% 18%;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 1rem;
+    border-left: 2px solid ;
+    
+}
+
+.cart-title{
+    font-size: 15px;
+    font-weight: 800;
+    text-align: center;
+    color: var(--bgcolor-9);
+    
+}
+
+.cart-box img{
+    width: 110px;
+    height: 100px;
+    object-fit:cover;
+    padding: 10px;
+    box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+}
+
+.detail-box{
+    display: grid;
+    row-gap: 0.5rem;
+}
+.quantite{
+    font-size: 10px;
+    font-weight: 800;
+    padding-bottom: 10px;
+}
+
+.cart-product-title{
+    padding-top: 15px;
+    font-size: 10px;
+    font-weight: 800;
+    text-transform: uppercase;
+    overflow-y: scroll;
+    height: 50px;
+}
+.cart-product-title::-webkit-scrollbar{
+    display: none;
+}
+
+.cart-price{ 
+    font-size: 15px;
+    font-weight: 800;
+    color: var(--bgcolor-10);
+}
+
+.cart-quantity{
+    border: 1px solid var(--bgcolor-2);
+    border-radius: 10px;
+    outline-color: #000000;
+    width: 2.4rem;
+    text-align: center;
+    font-size: 1rem;
+    display: none;
+}
+
+.prix-party-ojo{
+    display: flex;
+}
+
+.cart-remove{
+    font-size: 0;
+    color: var(--bgcolor-9);
+}
+
+
+
+.prixto{
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+    font-size: 15px;
+    font-weight: 800;
+    color: var(--bgcolor-11);
+    width: 100%;
+    padding-left: 10%;
+    
+    
+}
+
+.livtotall{
+    display: flex;
+    padding-top: 5px;
+}
+
+.total{
+    display: flex;
+    font-size: 20px;
+    font-weight: 800;
+    margin-top: 1.5rem;
+    border-top: 3px solid var(--bgcolor-2);
+    padding-top: 10px;
+    color: var(--bgcolor-11);
+    padding-bottom: 5px;
+}
+
+.liv{
+    font-size: 20px;
+    font-weight: 800;
+    color: var(--bgcolor-11);
+    
+}
+
+.plusliv{
+    font-size: 20px;
+    font-weight: 800;
+    color: var(--bgcolor-11);
+
+}
+
+.total-title{
+    font-size: 1rem;
+    font-size: 20px;
+    font-weight: 800; 
+    color: var(--bgcolor-10);
+}
+
+.total-price{
+    margin-left: 0.5rem;
+    color: var(--bgcolor-12);
+    padding-left:50px ;
+    font-size: 15px;
+    
+}
+
+.pluslivto{
+    padding-left: 50px;
+    color: rgb(19, 101, 60);
+}
+
+.liv span{
+    padding-left: 15px;
+    font-size: 15px;
+}
+
+#close-cart{
+    display: block;
+    font-size: 0;
+}
+
+
+    /*--------------------------------finaly-------------------------------*/
+
+    .finaly{
+        height: 45  vh;
+        width: 100%;
+        padding-left:15% ;
+        padding-right: 15%;
+    }
+    
+    
+    .party1{
+        
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .party1 .icon_sc{
+        font-size: 25px;
+        cursor: pointer;
+        color: #373B44;
+    }
+    
+    .party1 .icon_sc i:hover{
+        color: #373b44b3;
+    }
+    
+    .party2{
+        margin-top: 40px;
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        margin-bottom:5vh;
+    }
+    
+    .party2 i{
+        font-size: 30px;
+    }
+    
+    .party2 i:hover{
+        color: #373b44d6;
+    }
+    
+    .party2 .copyright{
+        color: #373B44;
+        font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    }
+    
+    .party1 .p1 a{
+        text-decoration: none;
+        color: #373B44;
+    }
+    
+    .party1 .p1 .p1a{
+        padding-bottom: 10px;
+        font-weight: 700;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+    
+    .party1 .p1 .p1a:hover{
+        color: #080808;
+    }
+    
+    .party1 .p1{
+        margin-bottom: 10px;
+    }
+    
+    .t3{
+        width: 40%;
+    }
+    
+    .t3 p{
+        padding-bottom: 30px;
+    }
+    
+    .t3 .sub{
+        width: 100%;
+        display: flex;
+        padding-bottom: 40px;
+    }
+    
+    .t3 .sub input{
+        width: 80%;
+        height: 40px;
+        border: solid 1px #060606;
+        padding-left: 10px;
+    }
+    
+    .t3 .sub .subsc{
+        width: 20%;
+        height: 40px;
+        border: solid 1px #060606;
+        background-color: #373B44;
+        color: white;
+        cursor: pointer;
+        
+    }
+    
+    .t3 .sub .subsc:hover{
+        background-color: #373b44d8;
+    }
+    
+    .bank i{
+        cursor: pointer;
+    }
+    
+    .bank i:hover{
+        color:#373B44;
+    }
+    
+    
+
+
+
+@media screen and (max-width: 575px){
+
+    .formul{
+        height:130vh;
+        width: 100%;
+    }
+    .form{
+        position: relative;
+        top: 30%;
+        align-items: center;
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        height: 100vh;
+    }
+
+    .form h3{
+        font-size: 15px;
+        width: 140px;
+        
+    }
+
+    .form input,textarea{ 
+        padding: 10px;
+        outline: none;;
+        font-size: 10px;
+        width: 300px;
+    }
+    
+
+    
+    /*
+    
+    .form h3{
+        
+        font-size: 15px;
+        
+        width: 140px;
+        
+    }
+    
+    .form input,textarea{ 
+        padding: 10px;
+        outline: none;;
+        font-size: 10px;
+        width: 150px;
+    }
+
+    .form textarea{ 
+        padding-bottom: 30px;
+    }
+    button{
+        padding: 12px 10px;   
+    }*/
+
+    /*----------------------------------cart----------------------------------------------------------*/
+    
+
+    .cart{
+        margin-top: 0%;   
+        width: 80%;
+        height: 20%;
+        min-height: 40vh;
+        overflow-y: scroll;
+    }
+    
+
+    .cart-box{
+        gap: 1rem;
+        margin-top: 1rem;
+        border-left: 2px solid ;
+        height: 50px;
+        
+        
+    }
+
+    .cart-box img{
+        position: relative;
+        bottom: 10px;
+        width: 60px;
+        height: 50px;
+    }
+
+    .cart-product-title{
+        padding-top: 5px;
+        font-size: 10px; 
+        
+        
+    }
+
+    .cart-product-title{
+        text-transform: uppercase;
+        overflow-y: scroll;
+        height: 20px;
+        font-size: 8px; 
+        font-weight: 100;
+    }
+    
+    .cart-title{
+        font-size: 15px; 
+    }
+
+    .cart-price{  
+        font-size: 10px;
+        font-weight: 800;
+        position: relative;
+        top:2px;
+        color: var(--bgcolor-9);
+    }
+
+    .prix-party-ojo{
+        position: relative;
+        top: 10px;
+        
+    }
+    .quantite{
+        position: relative;
+        bottom: 30px;
+        font-size: 10px;
+    }
+
+
+
+    .prixto{
+        font-size: 10px; 
+    }
+    
+    
+    .total{
+        font-size: 10px;
+    }
+    
+    .liv{
+        font-size: 10px;    
+    }
+    
+    .plusliv{
+        font-size: 10px;
+    }
+    
+    .total-title{
+
+        font-size: 10px;
+
+    }
+    
+    .total-price{
+        font-size: 10px;
+        padding-left:50px ;
+        
+        
+    }
+    
+    .pluslivto{
+        padding-left: 50px;
+    }
+    
+    .liv span{
+        padding-left: 25px;
+        font-size: 10px;
+    }
+
+
+
+    
+
+/*
+    .hh-home{
+        position:relative;
+        display: flex;
+        background-color: #14323afc;
+        justify-content: space-between;
+        width: 100%;
+        align-items: center;
+        z-index: 2000;
+        padding: 8px 7%;
+        margin: 0;
+        padding-bottom: 6px;
+    }
+
+ 
+
+
+   
+
+
+
+    .cart-title{
+        font-size: 20px;
+        font-weight: 800;
+        text-align: center;
+        margin: 0;
+        padding: 0;
+        
+    }
+
+
+    .detail-box input{
+
+        
+
+        width: 20px;
+        font-size: 8px;
+        margin-bottom: 0px;
+        
+    }
+    .quantite{
+        
+        font-weight: 800;
+        padding-bottom: 0px;
+        font-size: 1px;
+        margin: 0;
+        
+    }
+
+    .cart-product-title{
+        
+        position: relative;
+        padding-top: 20px;
+        font-size: 8px;
+        font-weight: 800;
+        text-transform: uppercase;
+        overflow-y: scroll;
+        height: 50px;
+        margin: 0;
+        padding: 0;
+        
+    }
+    .cart-product-title::-webkit-scrollbar{
+        display: none;
+    }
+
+    .cart-price{ 
+        margin-top: 0px;
+        padding: 0;
+        font-size: 8px;
+        font-weight: 800;
+    
+    }
+
+    .cart-quantity{
+        bottom: 65%;
+        position: absolute;
+        border-radius: 10px;
+        outline-color: #000000;
+        width: 2.4rem;
+        text-align: center;
+        font-size: 1rem;
+        margin-bottom: 20px;
+        
+    }
+
+    .cart-remove{
+        font-size: 0;
+    }
+
+    .total{
+        display: flex;
+        justify-content: flex-end;
+        font-size: 10px;
+        font-weight: 800;
+        margin-top: 1.5rem;
+
+        padding-top: 10px;
+        
+
+    }
+
+    .total-title{
+        font-size: 1rem;
+        font-size: 10px;
+        font-weight: 800; 
+        color: #000000;
+        
+    }
+
+    .total-price{
+        margin-left: 0.5rem;
+        
+        
+    }
+
+    #close-cart{
+        display: block;
+        font-size: 0;
+    }
+    */
+
+
+    /*--------------------------------finaly-------------------------------*/
+
+    .finaly{
+        width: 100%;
+        padding-left:15px ;
+        padding-right: 15px;
+    }
+
+    .party1{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        font-size: 12px;
+    }
+
+    .party2 .copyright{
+        font-size: 12px;
+        color: #373B44;
+        font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        font-size: 15px;
+    }
+
+    .t3{
+        font-size: 12px;
+        width: 100%;
+    }
+
+}
+
+
+
+

@@ -1,0 +1,231 @@
+
+:root{
+    --bgcolor:#ffffff;
+    --textcolor:#111111;
+    --maincolor:#c8815f;
+    --bgcolor-1: rgb(40, 161, 64);
+    --bgcolor-2:#22282a;
+    --padding: 8%;
+    --item:rgb(235,219,203);
+    --bgcolor-9:rgb(46, 214, 113);
+    --bgcolor-99:rgba(46, 214, 113, 0.744);
+    --bgcolor-10:#05664f;
+    --bgcolor-11:#0d2329;
+    --bgcolor-12:#14edb9;
+    --bgcolor-13:#5aff7a;
+    --bgcolor-13:#d1ff5d;
+    --bgcolor-14:#14323afc;
+}
+
+.product_display{
+    margin: 10px;
+    
+}
+
+.header{
+    
+    padding-bottom: 50px;
+    background-color: white;
+    margin-top: 50px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.header .title{
+    margin-left: 30px;
+    margin-right: 30px;
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 30px;
+    position: relative;
+    bottom: 15px;
+    padding: 20px;
+    background:linear-gradient(to left ,var(--bgcolor-99),var(--bgcolor-9)); 
+    border-radius: 8px;
+    color: white;
+}
+
+
+table{
+    width: 100%;
+    
+    padding-left: 20px;
+    padding-right: 20px;
+    
+    
+}
+
+thead{
+    font-size: 15px;
+    color: #111111;
+}
+
+td{
+    border-bottom:solid 0px;
+    border-bottom-color: var(--bgcolor-11);
+    color: rgb(0, 0, 0);
+    padding: 5px;
+    
+    font-size: 15px;
+    border-left-color: rgb(255, 255, 255); 
+    border-bottom:solid 0.1px rgb(212, 212, 212);
+    
+}
+
+tr{
+    color: black;
+}
+
+
+
+td img{
+    width: 80px;
+    height: 50px;
+    object-fit:cover;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+
+
+
+.name_td{
+    min-width: 700px;
+    overflow-x: scroll;
+    width: 50px;
+    
+}
+
+.name_td::-webkit-scrollbar{
+    display: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+.edit_btn{
+    border-color: black;
+    background-color: rgb(255, 255, 255);
+    width: 80px;
+    cursor: pointer;
+    margin-bottom: 0;
+    
+}
+
+.edit_btn:hover{
+    background-color: #21a82f;
+    color: white;
+    transition: 0.3s;
+    
+    
+}
+
+.delete_btn{
+    border-color: black;
+    background-color: #000000;
+    color: rgb(255, 255, 255);
+    width: 80px;
+    cursor: pointer;  
+}
+
+.delete_btn:hover{
+    background-color: #ff0000;
+    transition: 0.3s;
+      
+}
+
+button{
+    margin-top: 5px;
+}
+
+
+
+@media (max-width:991px){
+    thead{
+        font-size: 15px;
+        
+    }
+}
+
+
+@media (max-width:450px){
+
+    
+
+    table{
+        padding-left: 0;
+        padding-right: 0;  
+    }
+
+    
+    .ttitle{
+        font-size: 12px;
+    }
+
+    td{
+        width: 5%;
+        
+        padding: 0px;
+        font-size: 8px;
+        min-height: 30px;
+        max-height: 30px;
+        border-bottom:solid 0.1px rgb(212, 212, 212);
+        
+    }
+    
+
+    
+
+    td img{
+        width: 50px;
+        height: 40px;
+    }
+    
+
+
+    .name_td{
+        min-width: 90px;
+        max-width: 90px;
+        max-height: 30px;
+        min-height: 30px;
+        width: 50px;
+        height: 30px;
+    }
+
+    .edit_btn{
+
+        width: 50px;
+
+    }
+
+    .delete_btn{
+        width: 50px;
+    
+    }
+
+    
+    button{
+        margin-top: 5px;
+        font-size: 8px;
+    }
+    
+
+    .header .title{
+        font-size: 15px;
+        padding: 10px;
+        
+    }
+
+    tr{
+        box-shadow:none;
+        
+    }
+    
+    
+    
+}

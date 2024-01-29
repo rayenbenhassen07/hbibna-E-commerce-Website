@@ -1,0 +1,55 @@
+
+:root{
+    --bgcolor:#ffffff;
+    --textcolor:#111111;
+    --maincolor:#c8815f;
+    --bgcolor-1: rgb(40, 161, 64);
+    --bgcolor-2:#22282a;
+    --padding: 8%;
+    --item:rgb(235,219,203);
+    --bgcolor-9:rgb(46, 214, 113);
+    --bgcolor-10:#05664f;
+    --bgcolor-11:#0d2329;
+    --bgcolor-12:#14edb9;
+    --bgcolor-13:#5aff7a;
+    --bgcolor-13:#d1ff5d;
+    --bgcolor-14:#14323afc;
+}
+
+.face-info{
+    width: 100%;
+}
+
+.typing{
+    padding-top: 10%;
+    padding-left: 5%;
+    padding-right: 10%;
+    padding-bottom: 20%;
+    
+}
+
+.infotitle{
+    color: black;
+    font-weight: 800;
+    font-size: 30px;
+    padding-bottom: 20px;
+}
+
+.typing span{
+    color: rgb(42, 82, 139);
+    font-weight: 800;
+    font-size: 20px;
+    padding-bottom: 50px;
+    margin-bottom: 50px;
+}
+
+
+@media screen and (max-width: 575px){
+    .typing{
+        padding-top: 30%;
+        padding-left: 5%;
+        padding-right: 10%;
+        padding-bottom: 60%;
+    }
+
+}

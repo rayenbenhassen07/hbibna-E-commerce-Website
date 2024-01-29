@@ -1,0 +1,228 @@
+/*------------------register-----------------*/
+.register_page{
+    height: 100vh;
+    width: 100%;
+    background-color: rgba(30, 30, 247, 0.874);
+    padding-top: 5%;
+}
+
+.register_page{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.register_page h1{
+    padding: 20px;
+    font-weight: 600;
+    
+}
+
+.register_slog{
+    font-weight: 400;
+    letter-spacing: 3px;
+    color: rgba(0, 0, 0, 0.611);
+    font-size: 13px;
+}
+
+.register_page form{
+    margin-top: 40px;
+    display: flex;
+    justify-content:space-around;
+    width: 60%;
+}
+
+.information{
+    width: 45%;
+}
+
+.register_page form h3{
+    padding-bottom: 30px;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.register_page form .labell{
+    color: rgba(0, 0, 0, 0.497);
+    margin-bottom:5px;
+    padding-top: 10px;
+    font-size: 15px;
+}
+
+.register_page form .labell span{
+    color:red;
+}
+
+.register_page form input{
+    width: 95%;
+    height: 45px; 
+    padding-left: 5px;  
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: solid 5 red;
+    border: solid 0.5px rgba(0, 0, 0, 0.388);
+}
+
+.register_page form .formation .a2{
+    background-color: darkblue;
+}
+
+.buttom_formule{
+    width: 100%;
+    margin-top: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+}
+
+.register_page form button{
+    padding: 0.8rem 3rem  ;
+    background-color: rgba(0, 0, 0, 0.834);
+    color: rgba(255, 255, 255, 255);
+    font-weight: 700;
+    font-size: 14px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.register_page form button:hover{
+    background-color: black;
+    transition: 0.3s;
+
+}
+
+.error_information{
+    color: red;
+
+}
+
+/*--------------------login --------------*/
+
+.login_slog{
+    font-size: 15px;
+    color:rgb(92, 90, 90);
+    margin-bottom: 10px;
+
+}
+
+.creer_compt{
+    padding: 0.8rem 3rem  ;
+    background-color: rgba(0, 0, 0, 0.834);
+    color: rgba(255, 255, 255, 255);
+    font-weight: 700;
+    font-size: 14px;
+    cursor: pointer;
+    border-radius: 5px;
+
+}
+
+
+.creer_compt:hover{
+    background-color: black;
+    transition: 0.3s;
+
+}
+
+@media screen and (max-width: 575px){
+
+        /*------------------register-----------------*/
+    .register_page{
+        height: 100vh;
+        width: 100%;
+        background-color: rgba(254, 254, 255, 0.874);
+        padding-top: 5%;
+    }
+
+    .register_page{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .register_page h1{
+        padding: 20px;
+        font-weight: 600;
+        
+    }
+
+    .register_slog{
+        font-weight: 400;
+        letter-spacing: 3px;
+        color: rgba(0, 0, 0, 0.611);
+        font-size: 13px;
+    }
+
+    .register_page form{
+        margin-top: 40px;
+        display: flex;
+        justify-content:space-around;
+        width: 60%;
+    }
+
+    .information{
+        width: 45%;
+    }
+
+    .register_page form h3{
+        padding-bottom: 30px;
+        font-size: 20px;
+        font-weight: 600;
+    }
+
+    .register_page form .labell{
+        color: rgba(0, 0, 0, 0.497);
+        margin-bottom:5px;
+        padding-top: 10px;
+        font-size: 15px;
+    }
+
+    .register_page form .labell span{
+        color:red;
+    }
+
+    .register_page form input{
+        width: 95%;
+        height: 45px; 
+        padding-left: 5px;  
+        margin-bottom: 10px;
+        border-radius: 5px;
+        border: solid 5 red;
+        border: solid 0.5px rgba(0, 0, 0, 0.388);
+    }
+
+    .register_page form .formation .a2{
+        background-color: darkblue;
+    }
+
+    .buttom_formule{
+        width: 100%;
+        margin-top: 1rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        align-content: center;
+    }
+
+    .register_page form button{
+        padding: 0.8rem 3rem  ;
+        background-color: rgba(0, 0, 0, 0.834);
+        color: rgba(255, 255, 255, 255);
+        font-weight: 700;
+        font-size: 14px;
+        cursor: pointer;
+        border-radius: 5px;
+    }
+
+    .register_page form button:hover{
+        background-color: black;
+        transition: 0.3s;
+
+    }
+
+    .error_information{
+        color: red;
+
+    }
+
+}

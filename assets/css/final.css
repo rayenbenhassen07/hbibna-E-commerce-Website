@@ -1,0 +1,61 @@
+.feliall{
+    padding-top: 7%;
+    width: 100%;
+}
+
+.feli{
+    text-align: center;
+    display: flex;
+    margin-bottom:8% ;
+    justify-content:center;
+    height: 70px;
+
+    
+    
+}
+
+.feli .confirmer-img img{
+    width: 200px;
+
+
+
+}
+
+
+.feli .confirmer-text{
+    width: 500px;
+    font-size: 25px;
+    padding-top: 2%;
+}
+
+.feli .confirmer-text span{
+    background-color:var(--bgcolor-9);
+    color: #fefffe;
+    padding: 5px;
+    
+}
+
+
+
+
+@media screen and (max-width: 575px){
+
+    .feliall{
+        padding-top: 20%;
+    }
+
+    .feli{
+        height: 50px; 
+    }
+
+    .feli .confirmer-img img{
+        width: 60px;
+
+    }
+
+    .feli .confirmer-text{
+        width: 250px;
+        font-size: 15px; 
+    }
+
+}
